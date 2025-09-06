@@ -1,0 +1,20 @@
+{
+  "plain_command_injection": [
+    "subprocess-shell-true", "os.system", "popen", "shell", "command-injection"
+  ],
+  "plain_remote_code_execution": [
+    "eval", "exec", "pickle", "yaml.load", "code-injection"
+  ],
+  "plain_sql": [
+    "sql-injection", "raw-sql", "sqlalchemy", "cursor.execute", "executemany"
+  ],
+  "plain_xss": [
+    "xss", "mark_safe", "autoescape", "render_template_string", "jinja"
+  ],
+  "plain_open_redirect": [
+    "open-redirect", "flask-url-for-external-true", "redirect"
+  ],
+  "plain_xsrf": [
+    "csrf", "csrf-exempt", "wtf_csrf_enabled"
+  ]
+}

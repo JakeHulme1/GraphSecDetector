@@ -1,0 +1,11 @@
+{
+  "files.watcherExclude": {
+    "**/extracted_pairs/**": true,
+    "**/semgrep_results/**": true,
+    "**/.git/**": true
+  },
+  "search.exclude": {
+    "**/extracted_pairs/**": true,
+    "**/semgrep_results/**": true
+  }
+}

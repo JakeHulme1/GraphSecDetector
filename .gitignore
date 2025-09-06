@@ -1,0 +1,70 @@
+# virtual environments
+venv/
+.venv/
+env/
+.env/
+
+#  RAW DATA 
+datasets/vudenc/raw/**           
+!datasets/vudenc/raw/**/         
+!datasets/vudenc/raw/.gitkeep
+!datasets/vudenc/raw/output_formats.md
+
+#  PREPARED DATA
+datasets/vudenc/processed/**       
+!datasets/vudenc/processed/**/      
+!datasets/vudenc/processed/.gitkeep 
+
+#  SPLITS
+datasets/vudenc/splits/**       
+!datasets/vudenc/splits/**/      
+!datasets/vudenc/splits/.gitkeep 
+
+#  OTHER LARGE / ONE-OFF DUMPS
+datasets/raw/*.jsonl
+datasets/csn/csn_negatives.jsonl
+
+# GRAPH-CREATED DATA
+datasets/vudenc/prepared/**
+!datasets/vudenc/prepared/**/      
+!datasets/vudenc/prepared/.gitkeep 
+
+src/comparison/command_injection
+src/comparison/open_redirect
+src/comparison/path_disclosure
+src/comparison/remote_code_execution
+src/comparison/sql
+src/comparison/xsrf
+src/comparison/xss
+src/comparison/command_injection_semgrep
+src/comparison/open_redirect_semgrep
+src/comparison/path_disclosure_semgrep
+src/comparison/remote_code_execution_semgrep
+src/comparison/sql_semgrep
+src/comparison/xsrf_semgrep
+src/comparison/xss_semgrep
+
+# BANDIT DATA
+**/*_bandit/
+
+# LOGS
+logs/
+
+#  PYTHON / BUILD ARTIFACTS
+__pycache__/
+*.py[cod]
+
+
+#  SYSTEM / EDITOR RUBBISH
+*.DS_Store
+*.log
+
+
+extracted_pairs/
+repo_cache/
+semgrep_results/
+out_repo_semgrep/
+out_repo_semgrep_official/
+third_party/*
+best_models/
+src/models/*.pt

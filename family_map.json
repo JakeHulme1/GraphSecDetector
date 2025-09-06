@@ -1,0 +1,8 @@
+{
+  "plain_command_injection": ["py-cmdi-shell-true", "py-cmdi-os-spawn"],
+  "plain_remote_code_execution": ["py-rce-eval-exec", "py-rce-pickle", "py-rce-yaml-load"],
+  "plain_xss": ["py-xss-mark-safe", "py-xss-jinja-autoescape-off", "py-xss-render-template-string"],
+  "plain_open_redirect": ["py-open-redirect-flask", "py-open-redirect-django"],
+  "plain_sql": ["py-sqli-execute", "py-sqli-executemany"],
+  "plain_xsrf": ["py-csrf-exempt"]
+}
